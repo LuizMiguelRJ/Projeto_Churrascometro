@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url(../IMAGES/OTHERS/background.jpg);
+    background-size: cover;
+}
+
+.containerCSS {
+    background-color: rgb(0, 0, 0, 0.6);
+    max-width: 950px;
+    padding: 50px;
+    transition: 500ms;
+    text-align: center;
+    display: absolute;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.containerCSS:hover {
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.s2CSS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleCSS {
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.inputCSS {
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    border-color: white;
+    background: transparent url(../img/transpSmall.png) repeat scroll 0 0;
+    color: white;
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: 1000ms;
+}
+
+.inputCSS::placeholder {
+    color: white;
+    opacity: 1;
+    position: absolute;
+    margin-left: 210px;
+}
+
+.inputCSS:focus {
+    outline: none;
+}
+
+.buttonCSS {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.buttonCSS:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.buttonCSS:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.buttonCSS:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.resultCSS {
+    color: white;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    .containerCSS {
+        border-radius: 0;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .inputCSS{
+        width: 550px;
+    }
+
+    .inputCSS::placeholder {
+        margin-left: 150px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .inputCSS{
+        width: 400px;
+    }
+
+    .inputCSS::placeholder {
+        margin-left: 75px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .containerCSS {
+        width: 400px;
+        height: 900px;
+        border-radius: 0;
+    }
+
+    .inputCSS {
+        width: 300px;
+        border-radius: 0;
+    }
+
+    .inputCSS::placeholder {
+        margin-left: 0px;
+    }
+
+    .titleCSS {
+        font-size: 30px;
+    }
+
+    #h1 {
+        font-size: 33px;
+    }
+
+    
+
+
+}
